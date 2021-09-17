@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/agri logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+  
+  <title>Nest Optical</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+  <div id="navbar">
+  <nav>
+    <input type="checkbox" id = "check">
+    <label for="check">
+      <i class="fas fa-bars" id = "btn" onclick="opennav()"></i>
+      <i class="fas fa-times" id = "cancel" onclick="closenav()"></i>
+
+    </label>  
+    <img src="img/Logo_with_Side_Text_-_White-removebg-preview 1.png">
+  <ul id="navlist">
+  <li><a href="#vision" onclick="closelist()">Vision</a></li>
+  <li><a href="#product" onclick="closelist()">Product</a></li>
+  <li><a href="#services" onclick="closelist()">Service</a></li>
+  <!-- <li><a href="#team" onclick="closelist()">Team</a></li> -->
+  <li><a href="#contact" onclick="closelist()">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<!-- Home -->
+<section id ="home">
+<div class="home">
+  <div class="text">
+    <img src="img/Logo_Text.png">
+    <p>
+      We aim to bring a change in the field of agriculture by efficient combination of technologies like artificial intelligence with IOT and modern farming techniques.
+    </p>
+  </div>
+  <div class="bg_image1">
+    <img src="img/Group 18.png">
+  </div>  
+</div>
+</section>
+
+<!-- Video -->
+<section id  = "video">
+<div class="video" >
+  <div id="video_player">
+    <video controls>
+      <source src="img/video.mp4">
+    </video> 
+  </div>
+</div>
+</section>
+
+<!-- Vision -->
+<section id ="vision">
+<div class="vision">
+  <div class="bg_image2">
+    <img src="img/image2.png">
+  </div> 
+  <div>
+    <p class="heading">vision</p>
+    <p>
+      We endeavour to infuse technology with agriculture to bring out a revolutionary change through product development which can ramp up crop growth and harvest with minimal resources and capital . We want society to dine with quality produce rich in nutrients and get rid of pesticides and other life threatening chemicals that we get to tuck-in today. We also make it a goal to boost the income of our farmer community and make sure they get their deserved remuneration
+    </p>
+  </div> 
+</div>
+</section>
+
+<!-- Product -->
+<section id = "product">
+  <div class="product">
+  <div>
+    <p class="heading">Products</p>
+  </div>
+  <!-- Carousel -->
+  <div class="carousel">
+    <div class="carousel-inner">
+        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        <div class="carousel-item">
+          <h2 class="heading2">Agriculture Products</h1>
+            <div class="row">
+              <div class="column" >
+                <p>Agrivator provides fresh and safe to eat vegetables and fruits from 'farm to fork'. The produce is sourced from clusters of farms under Agrivator across Kerala.</p>
+              </div>
+              <div class="column">
+                <img class ="agriculture-img" src="img/agriculture.png" alt="">
+              </div>
+            </div>
+            
+            <!-- <img src="http://fakeimg.pl/2000x800/0079D8/fff/?text=Without"> -->
+        </div>
+        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        <div class="carousel-item">
+          <h2 class="heading2">Airfarms</h1>
+            <div class="row">
+              <div class="column" >
+                <p>Agrivator uses fully automated Aeroponic systems in our Airfarms to grow crops efficiently. It is a soil less method of cultivation where plant roots are suspended in the air and nutrients are directly sprayed by a pump at regular intervals.</p>
+              </div>
+              <div class="column">
+                <img class ="airfarms-img" src="img/air-removebg-preview.png" alt="">
+              </div>
+            </div>
+            
+            <!-- <img src="http://fakeimg.pl/2000x800/0079D8/fff/?text=Without"> -->
+        </div>
+        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        <div class="carousel-item">
+          <h2 class="heading2">Advanced Automatic Irrigation System</h1>
+            <div class="row">
+              <div class="column" >
+                <p>AAIS is a complete irrigation solution for farmers, harnessing the power of AI, and Data Science.</p>
+              </div>
+              <div class="column">
+                <img class ="automatic-img" src="img/IRRIGATION.jpg" alt="">
+              </div>
+            </div>
+            
+            <!-- <img src="http://fakeimg.pl/2000x800/0079D8/fff/?text=Without"> -->
+        </div>
+        <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        <div class="carousel-item">
+          <h2 class="heading2">Dart</h1>
+            <div class="row">
+              <div class="column" >
+                <p>Dart is a localised cluster based commodity delivery system. With Dart, we aim to bridge the gap between the small farmer and the consumer. We provide a platform for consumers to directly purchase vegetables and other commodities from small scale farmers.</p>
+              </div>
+              <div class="column">
+                <img class ="Dart-img" src="img/dart.jpg" alt="">
+              </div>
+            </div>
+           
+            <!-- <img src="http://fakeimg.pl/2000x800/0079D8/fff/?text=Without"> -->
+        </div>
+        <input class="carousel-open" type="radio" id="carousel-5" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        <div class="carousel-item">
+          <h2 class="heading2">Growbags</h1>
+            <div class="row">
+              <div class="column" >
+                <p>If you are not so keen on employing soil-less farming in the beginning, you could always start with our big and strong grow bags. In regular pots, the roots of the plants tend to grow in circles entangling themselves.</p>
+              </div>
+              <div class="column">
+                <img class ="growbags-img" src="img/Grow_Bag-removebg-preview.png" alt="">
+              </div>
+            </div>
+            
+            <!-- <img src="http://fakeimg.pl/2000x800/0079D8/fff/?text=Without"> -->
+        </div>
+        <!-- <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item">
+        </div>
+        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item">
+        </div> -->
+       
+        <label for="carousel-5" class="carousel-control prev control-1">‹</label>
+        <label for="carousel-2" class="carousel-control next control-1">›</label>
+        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+        <label for="carousel-3" class="carousel-control next control-2">›</label>
+        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+        <label for="carousel-4" class="carousel-control next control-3">›</label>
+
+        <label for="carousel-3" class="carousel-control prev control-4">‹</label>
+        <label for="carousel-5" class="carousel-control next control-4">›</label>
+        <label for="carousel-4" class="carousel-control prev control-5">‹</label>
+        <label for="carousel-1" class="carousel-control next control-5">›</label>
+        
+        
+        <ol class="carousel-indicators">
+            <li>
+                <label for="carousel-1" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-2" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-3" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-4" class="carousel-bullet">•</label>
+          </li>
+        <li>
+          <label for="carousel-5" class="carousel-bullet">•</label>
+      </li>
+      
+        </ol>
+    </div>
+</div>
+  
+</div>
+  
+
+<!-- Services -->
+</section>
+
+<section id="services">
+<div class="services">
+  <p class="heading">services</p>
+  <div class="container">
+    <div class="itemgrid" id="itemgrid">
+      <div class="itemcard">
+        <img src="img/farmsetting.jpg" alt="" class="item-img">
+        <p class="item-text">Farm Consulting</p>
+      </div>
+      <div class="itemcard">
+        <img src="img/farmsetting.jpg" alt="" class="item-img">
+        <p class="item-text">Farm automation</p>
+      </div>
+      <div class="itemcard">
+        <img src="img/farmsetting.jpg" alt="" class="item-img">
+        <p class="item-text">Power tools development</p>
+      </div>
+      <div class="itemcard">
+        <img src="img/farmsetting.jpg" alt="" class="item-img">
+        <p class="item-text">Aquaponics and hydroponics systems</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="contact" >
+<div class="bg">
+<!-- Team -->
+<!-- <div class="team">
+  <p class="heading">our team</p>
+  <div class="container">
+    <div class="itemgrid" id="itemgrid">
+      <div class="itemcard">
+        <img src="img/ba1.jpg" alt="" class="item-img">
+        <p class="item-text">Sarath Shaji</p>
+        <p class="item-subtext">ceo</p>
+
+      </div>
+      <div class="itemcard">
+        <img src="img/ba2.jpg" alt="" class="item-img">
+        <p class="item-text">Irene Tennison</p>
+        <p class="item-subtext">cto</p>
+      </div>
+      <div class="itemcard">
+        <img src="img/ba3.jpg" alt="" class="item-img">
+        <p class="item-text">Cedric</p>
+        <p class="item-subtext">cfo</p>
+      </div>
+      <div class="itemcard">
+        <img src="img/ba4.jpg" alt="" class="item-img">
+        <p class="item-text">Arun SK</p>
+        <p class="item-subtext">coo</p>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="contact-form">
+  
+  <div>
+    <p class="heading">Contact</p>
+  </div>
+  <h4>Contact us and we will get back to you within 24 hours</h4>
+  <form>
+    <!-- <div class="form"> -->
+  <!-- <div class="txtb wide">
+    <input type="text" required>
+    <label>Name</label>
+    
+  </div> -->
+
+  <div class="txtb small">
+    <input type="text" required>
+    <label>Email</label>
+  </div>
+
+  <div class="txtb small-right">
+    <input type="text" required>
+    <label>Phone No</label>
+  </div>
+
+  <div class="txtb wide">
+    <textarea required></textarea>
+    <label>Message</label> 
+  </div>
+  <!-- </div> -->
+  
+
+  <a class="btn">Submit</a>
+</form>
+
+</div>
+
+
+<!-- Footer -->
+<footer class="footer-distributed">
+  <div class="footer-right">
+    <a href="https://www.facebook.com/agrivatortech" target="_blank"><i class="fab fa-facebook-square"></i></a>
+    <a href="https://www.instagram.com/agrivator.co/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/agrivator/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-left">
+    <p class="footer-links">
+      <a class="link-1">Kollam, Kerala</a>
+      <a> +91 9061714290</a>
+      <a> agrivator@gmail.com</a>
+    </p>
+    <p>Agrivator</p>
+  </div>
+</footer>
+</section>
+
+<button id="myBtn"><a href="#home" ><i class="fas fa-arrow-up"></i></a></button>
+<script>
+
+
+window.onscroll = function() {myFunction()};
+// function closelist(){
+//   // $("#check").attr("checked", false);
+//   document.getElementById("cancel").style.display="none";
+//   document.getElementById("btn").style.display="block";
+//   // document.getElementById("check").checked="false";
+//   // document.getElementById("navlist").style.transition="left 0.5s";
+//   document.getElementById("navlist").style.display="none";
+  
+  
+// }
+// function closenav(){
+//   document.getElementById("navlist").style.display="none"
+//   document.getElementById("cancel").style.display="none";
+//   document.getElementById("btn").style.display="block";
+  
+// }
+// function opennav(){
+//   document.getElementById("navlist").style.display="block";
+//   document.getElementById("navlist").style.transition="left 0.5s";
+//   document.getElementById("navlist").style.width="100%";
+//   document.getElementById("cancel").style.display="block";
+//   document.getElementById("btn").style.display="none";
+  
+// }
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+
+
+</script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>  
+  
+</body>
+</html>
